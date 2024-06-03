@@ -41,7 +41,5 @@
     "modelType": "MODEL_TYPE_ADVANCED",
     "classificationThreshold": 0.30000001
   },
-  "sessionParameters": {
-    "phoneNumber": "abc"
-  }
+  "sessionParameters": {"phoneNumber": "abc"}
 }
