@@ -42,6 +42,6 @@
     "classificationThreshold": 0.30000001
   },
   "sessionParameters": {
-    "phoneNumber": "$session.params.phoneNumber"
+    "phoneNumber": "abc"
   }
 }
