@@ -1,20 +1,19 @@
 {
-  "name": "f9080b1f-404d-4266-af4a-b3c41df2b952",
-  "displayName": "Greeting",
-  "description": "This flow identifies the caller's ANI, retrieves user details, and greets the user with a personalized message if the user phone lookup is successful.",
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "WelcomeFlow",
+  "description": "A start flow created along with the agent",
   "transitionRoutes": [ {
-    "condition": "true",
+    "intent": "Default Welcome Intent",
     "triggerFulfillment": {
-      "setParameterActions": [ {
-        "parameter": "$flow.company_name",
-        "value": "Google"
-      }, {
-        "parameter": "phone_number",
-        "value": "$request.payload.telephony.caller_id"
+      "messages": [ {
+        "text": {
+          "text": [ "Welcome to C I I . Let me verify you first." ]
+        },
+        "languageCode": "en"
       } ]
     },
-    "targetPage": "check phone number",
-    "name": "b84bd018-aaf4-4e02-ab41-f6f6c566d6b5"
+    "targetPage": "Start Page",
+    "name": "49fa4902-3d3e-48e1-83db-0d8b7f669751"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
@@ -26,7 +25,7 @@
         "languageCode": "en"
       } ]
     },
-    "name": "39e10e26-1cc3-4773-98bf-2c705ba07d85"
+    "name": "b138d3b1-f300-4600-b897-4dea24428b8d"
   }, {
     "event": "sys.no-input-default",
     "triggerFulfillment": {
@@ -37,7 +36,7 @@
         "languageCode": "en"
       } ]
     },
-    "name": "39e193a8-c52c-40d3-801b-ffb4178e92eb"
+    "name": "00f37f3b-24fe-47d9-9b9c-85e12b885a7d"
   } ],
   "nluSettings": {
     "modelType": "MODEL_TYPE_ADVANCED",

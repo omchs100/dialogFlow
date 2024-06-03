@@ -8,11 +8,11 @@
   
   },
   "transitionRoutes": [ {
-    "condition": "$session.params.phone_number = null OR $session.params.Exist = false",
+    "condition": "$session.params.phone_number = null OR $session.params.user_first_name = null OR $session.params.phone_number = \"\" OR $session.params.user_first_name = \"\"",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Hi, Thank you for contacting $flow.company_name. \n Please register with us to get started." ]
+          "text": [ "Hi, Thank you for contacting $flow.company_name. \nWe are committed to your financial health. How may we assist you today? " ]
         },
         "languageCode": "en"
       } ],
@@ -24,11 +24,11 @@
     "targetPage": "End Flow",
     "name": "f53619ca-38d8-479d-8f75-365dda267320"
   }, {
-    "condition": "$session.params.phone_number != null AND $session.params.Exist = true",
+    "condition": "$session.params.phone_number != null AND $session.params.user_first_name != null",
     "triggerFulfillment": {
       "messages": [ {
         "text": {
-          "text": [ "Hi Valuable Member. Thank you for contacting $flow.company_name.\nWe are committed to your financial health. How may we assist you today?" ]
+          "text": [ "Hi $session.params.user_first_name. Thank you for contacting $flow.company_name.\nWe are committed to your financial health. How may we assist you today?" ]
         },
         "languageCode": "en"
       } ],
