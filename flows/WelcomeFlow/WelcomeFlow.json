@@ -12,7 +12,7 @@
         "languageCode": "en"
       } ]
     },
-    "targetPage": "Start Page",
+    "targetFlow": "Greeting",
     "name": "49fa4902-3d3e-48e1-83db-0d8b7f669751"
   } ],
   "eventHandlers": [ {
