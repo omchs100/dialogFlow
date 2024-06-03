@@ -37,7 +37,7 @@
                   {
                       "text": {
                           "text": [
-                              "Please enter your 10-digit phone number."
+                              "Please enter your 10-digit phone number"
                           ]
                       },
                       "languageCode": "en"
@@ -56,33 +56,5 @@
               "enabled": true
           }
       }
-  },
-  "advancedSettings": {
-      "enabled": true
-  },
-  "fulfillment": {
-      "webhook": {
-          "enabled": true,
-          "url": "https://us-central1-eas-cognitive-cc-gdc1000231537.cloudfunctions.net/checkPhoneNumberExist"
-      }
-  },
-  "outputContexts": [
-      {
-          "name": "$session",
-          "lifespanCount": 1
-      }
-  ],
-  "condition": "$session.exists == false",
-  "triggerFulfillment": {
-      "messages": [
-          {
-              "text": {
-                  "text": [
-                      "You need to register first."
-                  ]
-              },
-              "languageCode": "en"
-          }
-      ]
   }
 }
