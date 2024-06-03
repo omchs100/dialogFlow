@@ -7,7 +7,7 @@
     "triggerFulfillment": {
       "setParameterActions": [ {
         "parameter": "$flow.company_name",
-        "value": "Google"
+        "value": "CII"
       }, {
         "parameter": "phone_number",
         "value": "$request.payload.telephony.caller_id"

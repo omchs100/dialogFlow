@@ -3,17 +3,18 @@
   "displayName": "WelcomeFlow",
   "description": "A start flow created along with the agent",
   "transitionRoutes": [ {
-    "intent": "Default Welcome Intent",
+    "condition": "true",
     "triggerFulfillment": {
-      "messages": [ {
-        "text": {
-          "text": [ "Welcome to C I I . Let me verify you first." ]
-        },
-        "languageCode": "en"
+      "setParameterActions": [ {
+        "parameter": "$flow.company_name",
+        "value": "CII"
+      }, {
+        "parameter": "phone_number",
+        "value": "$request.payload.telephony.caller_id"
       } ]
     },
-    "targetPage": "Start Page",
-    "name": "49fa4902-3d3e-48e1-83db-0d8b7f669751"
+    "targetPage": "check phone number",
+    "name": "b84bd018-aaf4-4e02-ab41-f6f6c566d6b5"
   } ],
   "eventHandlers": [ {
     "event": "sys.no-match-default",
