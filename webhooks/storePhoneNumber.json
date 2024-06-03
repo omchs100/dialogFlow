@@ -6,10 +6,11 @@
     "requestHeaders": {
       "Content-Type": "application/json"
     },
-    "body": {
+    "body": [{
       "data": {
         "phoneNumber": "1234567890"
-      }}
+      }
+    }]
   },
   "timeout": {
     "seconds": 5
