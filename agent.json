@@ -2,7 +2,7 @@
   "defaultLanguageCode": "en",
   "timeZone": "America/Los_Angeles",
   "projectNumber": 232126027896,
-  "startFlow": "WelcomeFlow",
+  "startFlow": "Greeting",
   "advancedSettings": {
     "loggingSettings": {
     
