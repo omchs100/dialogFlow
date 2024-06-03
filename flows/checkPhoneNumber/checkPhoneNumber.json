@@ -92,42 +92,10 @@
       "url": "https://us-central1-eas-cognitive-cc-gdc1000231537.cloudfunctions.net/checkPhoneNumberExist"
     }
   },
-"outputContexts": [
+  "outputContexts": [
     {
       "name": "$session",
       "lifespanCount": 1
-    }
-  ],
-  "conditionalResponses": [
-    {
-      "condition": "$session.exists == true",
-      "triggerFulfillment": {
-        "messages": [
-          {
-            "text": {
-              "text": [
-                "Welcome user!"
-              ]
-            },
-            "languageCode": "en"
-          }
-        ]
-      }
-    },
-    {
-      "condition": "$session.exists == false",
-      "triggerFulfillment": {
-        "messages": [
-          {
-            "text": {
-              "text": [
-                "You need to register first."
-              ]
-            },
-            "languageCode": "en"
-          }
-        ]
-      }
     }
   ]
 }
