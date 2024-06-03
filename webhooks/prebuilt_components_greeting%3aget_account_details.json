@@ -3,12 +3,16 @@
   "displayName": "prebuilt_components_greeting:get_account_details",
   "genericWebService": {
     "uri": "https://us-central1-eas-cognitive-cc-gdc1000231537.cloudfunctions.net/checkPhoneNumberExist",
+    "requestHeaders": [ {
+      "key": "Content-Type",
+      "value": "application/json"
+    } ],
     "webhookType": "FLEXIBLE",
     "httpMethod": "POST",
-    "requestBody": "{\n  \"phoneNumber\": \"$session.params.phone_number\",\n  \"fulfillmentInfo\": {\n    \"tag\": \"getAccount\"\n  }\n}",
+    "requestBody": "{\"data\": {\"phoneNumber\": \"$session.params.phone_number\"}}",
     "parameterMapping": [ {
-      "key": "user_first_name",
-      "value": "$.name"
+      "key": "Exist",
+      "value": "$.exists"
     } ]
   },
   "timeout": {
