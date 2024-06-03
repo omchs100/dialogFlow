@@ -1,0 +1,10 @@
+{
+  "name": "be8f655f-96cb-46fa-a75d-37181d6f281b",
+  "displayName": "storePhoneNumber",
+  "genericWebService": {
+    "uri": "https://us-central1-eas-cognitive-cc-gdc1000231537.cloudfunctions.net/checkPhoneNumberExist"
+  },
+  "timeout": {
+    "seconds": 4
+  }
+}
