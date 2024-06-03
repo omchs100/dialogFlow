@@ -5,6 +5,11 @@
     "uri": "https://us-central1-eas-cognitive-cc-gdc1000231537.cloudfunctions.net/checkPhoneNumberExist",
     "requestHeaders": {
       "Content-Type": "application/json"
+    },
+    "body": {
+      "data": {
+        "phoneNumber": "1234567890"
+      }
     }
   },
   "timeout": {
