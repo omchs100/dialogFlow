@@ -9,8 +9,7 @@
     "body": {
       "data": {
         "phoneNumber": "1234567890"
-      }
-    }
+      }}
   },
   "timeout": {
     "seconds": 5
