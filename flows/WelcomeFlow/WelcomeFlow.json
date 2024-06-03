@@ -10,15 +10,9 @@
           "text": [ "Welcome to C I I . Let me verify you first." ]
         },
         "languageCode": "en"
-      } ],
-      "webhook": "storePhoneNumber",
-      "tag": "CII",
-      "setParameterActions": [ {
-        "parameter": "phoneNumber",
-        "value": "$session.params.phoneNumber"
-      } ],
-      "sendCallCompanionSms": true
+      } ]
     },
+    "targetPage": "Start Page",
     "name": "49fa4902-3d3e-48e1-83db-0d8b7f669751"
   } ],
   "eventHandlers": [ {
