@@ -1,0 +1,25 @@
+{
+  "name": "123e1780-8cea-4dad-9850-8aa04b2a9c49",
+  "displayName": "check phone number",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$session.params.phone_number = null OR $session.params.phone_number = \"\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Welcome",
+    "name": "e1181330-9ab8-4d05-a203-b18e9b9b5254"
+  }, {
+    "condition": "$session.params.phone_number != null",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "\u003e get Account API Invoke",
+    "name": "3747c796-9f49-4950-84fb-8e157160fc21"
+  } ]
+}

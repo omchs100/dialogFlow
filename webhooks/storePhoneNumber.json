@@ -3,10 +3,10 @@
   "displayName": "storePhoneNumber",
   "genericWebService": {
     "uri": "https://us-central1-eas-cognitive-cc-gdc1000231537.cloudfunctions.net/checkPhoneNumberExist",
-    "requestHeaders": {
-      "Content-Type": "application/json"
-    },
-    "body": {}
+    "requestHeaders": [ {
+      "key": "Content-Type",
+      "value": "application/json"
+    } ]
   },
   "timeout": {
     "seconds": 5
