@@ -6,7 +6,7 @@
     "requestHeaders": {
       "Content-Type": "application/json"
     },
-    "body": "{\n  \"phoneNumber\": \"{{phoneNumber}}\"\n}"
+    "body": {}
   },
   "timeout": {
     "seconds": 5
