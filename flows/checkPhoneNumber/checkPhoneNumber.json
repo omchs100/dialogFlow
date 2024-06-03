@@ -97,5 +97,21 @@
       "name": "$session",
       "lifespanCount": 1
     }
-  ]
+  ],
+  
+    "condition": "$session.exists == false",
+    "triggerFulfillment": {
+      "messages": [
+        {
+          "text": {
+            "text": [
+              "You need to register first."
+            ]
+          },
+          "languageCode": "en"
+        }
+      ]
+    }
+  
+  
 }
